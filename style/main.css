@@ -167,7 +167,7 @@ color: #FFFFFF;
 {
     position: relative;
     margin: auto;
-    background-image: url(/img/header-back-img.jpg);
+    background-image: url(../img/header-back-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1667px;
@@ -337,7 +337,7 @@ margin-top: 85px;
 .section-3__left
 {
     flex: 0 0 50%;
-    background-image: url(/img/section-3-photo.jpg);
+    background-image: url(../img/section-3-photo.jpg);
     background-repeat: no-repeat;
     max-width: 877px;
     display: flex;
