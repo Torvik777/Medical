@@ -92,10 +92,7 @@ color: #FFFFFF;
     align-items: center;
     height: 119px;
 }
-.menu
-{
-    
-}
+
 .menu-links
 {
     font-weight: 500;
@@ -164,6 +161,9 @@ color: #FFFFFF;
     font-size: 16px;
     line-height: 18px;
     color: #000000;
+}
+.tel-br{
+    display: none;
 }
 /* _______________ */
 .header__main-block
@@ -504,7 +504,7 @@ margin-top: 85px;
     overflow: hidden;
     height: auto;
     transition: 1s;
-    max-height: 500px;
+    max-height: 900px;
    
 }
 .main-block_headen{
@@ -855,8 +855,11 @@ color: #FFFFFF;
         padding-left: 10px;
         padding-right: 25px;
     }
-    .call-us__contact{
+    /* .call-us__contact{
         white-space: unset;
+    } */
+    .tel-br{
+        display: unset;
     }
 }
 @media (max-width: 1260px) 
@@ -899,6 +902,19 @@ color: #FFFFFF;
         align-items: center;
         padding-left: 0px;
     }
+    .acordion__main-block{
+        flex-direction: column;
+    }
+    .acordion__main-block__img {
+        margin-bottom: 10px;
+    }
+    .section-4-flex{
+        flex-direction: column;
+    }
+    .section-4-left-part
+    {
+        margin-bottom: 30px;
+    }
 }
 @media (max-width: 862px) 
 { 
@@ -906,6 +922,11 @@ color: #FFFFFF;
         width: 768px;
         padding-left: 10px;
         padding-right: 20px;
+    }
+    .header__main-block
+    {
+        background-image: url(../img/header-back-tele-img.jpg);
+        background-position: center;
     }
     .header__content
     {
@@ -924,13 +945,7 @@ color: #FFFFFF;
         padding: 0px;
     }
 
-    .section-4-flex{
-        flex-direction: column;
-    }
-    .section-4-left-part
-    {
-        margin-bottom: 30px;
-    }
+
 }
 
 @media (max-width: 780px) 
