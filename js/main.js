@@ -47,7 +47,7 @@ for (y=0; y<acordionSectionsDOM.length;y++)
         content: contentElement
     };
 }
-console.log(acordionSections)
+// console.log(acordionSections)
 
 for (let i = 0; i<acordionSections.length; i++)
 {
@@ -64,7 +64,7 @@ function openOrClouseSection()
 
     let sectionState = this.querySelector(".acordion__icon").dataset.active;
 
-    console.log(sectionState);
+    // console.log(sectionState);
 
     if(sectionState == "no"){
         OpenSection(this);
@@ -139,7 +139,7 @@ if (menuLinks.length > 0);
             // scrollY - це раніше було pageYOffset - воно видає кількість пікселів які вже були прокручені з початку стторінки
 
             const transitionBlockValue = transitionBlock.getBoundingClientRect().top + scrollY;
-            console.log(`scroly = ${scrollY}; transitionBlockValue = ${transitionBlockValue}`)
+            // console.log(`scroly = ${scrollY}; transitionBlockValue = ${transitionBlockValue}`)
             // transitionBlockValue - має значення його знаходження в пікселях від його початку
 
             //код який заставляє прокрутитись до потрімного момента
@@ -153,3 +153,19 @@ if (menuLinks.length > 0);
             element.preventDefault();
         }
     }
+
+
+    // Disactive links
+    let allLinks = document.querySelectorAll("body a");
+
+    for (const link of allLinks)
+    {
+        link.addEventListener("click", disableLinks);
+    }
+    function disableLinks(element)
+    {
+      
+            element.preventDefault();
+    }
+
+    
